@@ -12,7 +12,8 @@ global btn
 df =None
 
 
-stat_df=pd.read_csv("/Blueberry/Dataset/stat.csv")
+# stat_df=pd.read_csv("/Blueberry/Dataset/stat.csv")
+stat_df=pd.read_csv("Dataset/stat.csv")
 stat_df.set_index('Unnamed: 0',inplace=True)
 
 def get_values(label):

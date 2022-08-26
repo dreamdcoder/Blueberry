@@ -12,7 +12,8 @@ import streamlit as st
 
 
 def prediction(df):
-    model = joblib.load("/Blueberry/Model/model.pkl")
+    # model = joblib.load("/Blueberry/Model/model.pkl")
+    model = joblib.load("Model/model.pkl")
 
     y_val=model.predict(df)
     st.write(f"Estimated Blueberry for given datapoint will be {y_val}.")
